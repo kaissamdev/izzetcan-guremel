@@ -1,8 +1,8 @@
 {% if post.categories contains "left"%}
-  <div class="post-card" style="width:45%;margin-right: 112.2;margin-right: 112.2;margin-right: 113px;" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div id="post-left" class="post-card" style="width:45%;margin-right: 112.2;margin-right: 112.2;margin-right: 113px;" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
 {% endif%}
 {% if post.categories contains "right"%}
-  <div class="post-card" style="width:45%;margin-right: 112.2;margin-right: 112.2;margin-right: 0px;" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div id="post-right" class="post-card" style="width:45%;margin-right: 112.2;margin-right: 112.2;margin-right: 0px;" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
 {% endif%}
   {% if post.categories %}
     {% assign categories = post.categories %}
@@ -45,3 +45,5 @@
     {% endif %}
   </a>
 </div>
+
+ <script src="assets/js/custom.js"></script>
